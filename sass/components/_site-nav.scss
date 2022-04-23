@@ -1,0 +1,113 @@
+.site-nav__list {
+    display: flex;
+    text-decoration: none;
+    font-family: var(--accent-text);
+    font-style: normal;
+    list-style: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.current::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    bottom: 0;
+    background: var(--accent-color);
+    border-radius: 2px;
+    transform: translateY(32px);
+}
+/*
+.item3:hover::after,
+.item3:focus::after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 4px;
+    background: var(--accent-color);
+    border-radius: 2px;
+    transform: translateY(32px);
+}
+*/
+.site-nav__list .nav-list__link {
+    text-align: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    text-decoration: none;
+    color: var(--accent-text-color);
+    font-weight: 500;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.item:not(:last-child){
+    margin-right: 50px;
+}
+
+.site-nav__list .nav-list__link:hover,
+.site-nav__list .nav-list__link:focus {
+    color:  var(--accent-color);
+}
+.site-nav__list .current {
+    color: var(--accent-color);
+}
+.contact__list {
+    display: flex;
+    margin-left: auto;
+}
+.contact__list {
+    color: var(--aside-text);
+    font-weight: 500;
+    font-family: var(--accent-text);
+    font-style: normal;
+    list-style: none;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+.contact__item {
+    margin-right: 50px;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        color: #2196F3;
+        fill: var(--accent-color);
+}
+}
+.nav-contact__link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--aside-text);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        color: #2196F3;
+        fill: var(--accent-color);
+}
+}
+.contact-item__icon {
+    height: 16px;
+    fill: currentColor;
+    margin-right: 10px;
+}
+.contact__item2 {
+    color: var(--aside-text);
+    text-decoration: none;
+    font-weight: 500;
+    &:hover,
+    &:focus {
+        color: #2196F3;
+        fill: var(--accent-color);
+}
+}    

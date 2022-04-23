@@ -1,0 +1,77 @@
+.img__link {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: hidden;
+    &:hover,
+    &:focus {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+}
+.img__list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-right: -30px;
+    margin-bottom: -30px;
+}
+
+.img__item {
+    background: var(--accent-background-color);
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+.overlay::before {
+    position: absolute;
+    content:'Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.';
+    font-family: var(--accent-text);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    padding: 63px 24px 63px 24px;
+    width: 370px;
+    height: 294px;
+    color: var(--accent-background-color);
+    background: rgba(33, 150, 243, 0.9);
+    transform: translateY(101%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.overlay:hover::before,
+.overlay:focus::before {
+    transform: translateY(0);  
+}
+.img__description {
+    position: relative;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+    padding-top: 20px;
+    padding-right: 24px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    border-top: none;
+    background-color: var(--accent-background-color);
+    overflow: hidden;
+}
+.img__desc {
+    font-family: var(--accent-text);
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--accent-text-color);
+}
+.img__text {
+    font-family: var(--accent-text);
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.03em;
+    color: var(--aside-text);
+}

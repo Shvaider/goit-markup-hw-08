@@ -1,0 +1,10 @@
+.header-nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}/*# sourceMappingURL=header.css.map */
