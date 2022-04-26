@@ -1,34 +1,77 @@
-.section-main  {
-    max-width: 1600px;
-    height: 600px;
-    margin: 0 auto;
-    text-align: center;
-    padding-top: 200px;
-    padding-bottom: 200px;
-    background-color: #2f303a;
-    background-image: linear-gradient( 
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-        ), 
-        url(../images/Img.jpg);
-    background-size: cover;
-    background-repeat: no-repeat
-}
-.advantage-container {
+// .section-main  {
+//     max-width: 1600px;
+//     height: 600px;
+//     margin: 0 auto;
+//     text-align: center;
+//     padding-top: 200px;
+//     padding-bottom: 200px;
+//     background-color: #2f303a;
+//     background-image: linear-gradient( 
+//         rgba(47, 48, 58, 0.4),
+//         rgba(47, 48, 58, 0.4)
+//         ), 
+//         url(../images/Img.jpg);
+//     background-size: cover;
+//     background-repeat: no-repeat
+// }
+// .advantage-container {
+//     text-align: center;
+//     height: auto;
+//     max-width: 1600px;
+// }
+// .section-main__caption {
+//     font-family: var(--accent-text);
+//     width: 696px;
+//     font-weight: 900;
+//     font-size: 44px;
+//     line-height: 1.36;
+//     text-align: center;
+//     letter-spacing: 0.06em;
+//     text-transform: uppercase;
+//     color: var(--accent-background-color);
+//     margin: 0 auto;
+//     margin-bottom: 30px;
+// }
+@media screen and (max-width: 767px) {
+    .section-main  {
+        min-width: 480px;
+        height: 400px;
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 118px;
+        padding-bottom: 118px;
+        background-color: #2f303a;
+        background-image: linear-gradient( 
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+            ), 
+            url(/images/header-img.jpg);
+        background-size: cover;
+        background-repeat: no-repeat
+    }
+    @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+      .section-main {
+        background-image: url('/images/header-img@2x.jpg');
+      }
+  }
+  .advantage-container {
     text-align: center;
     height: auto;
-    max-width: 1600px;
+    max-width: 480px;
 }
 .section-main__caption {
     font-family: var(--accent-text);
-    width: 696px;
+    width: 360px;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.62;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--accent-background-color);
     margin: 0 auto;
     margin-bottom: 30px;
+}
 }
