@@ -442,6 +442,25 @@ body {
   }
 }
 @media screen and (min-width: 768px) {
+  .mobile-menu__btn {
+    display: none;
+  }
+
+  .mobile-menu__modal {
+    display: none;
+  }
+
+  .navigation {
+    display: flex;
+    align-content: center;
+  }
+
+  .header__nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
   .logo {
     margin-right: 88px;
     font-family: Raleway;
@@ -528,8 +547,12 @@ body {
     fill: var(--accent-color);
   }
 
-  .nav-contact__link {
+  .contact__item:not(:last-child) {
     margin-bottom: 10px;
+    padding-top: 21px;
+  }
+
+  .nav-contact__link {
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -548,6 +571,7 @@ body {
   }
 
   .contact__item2 {
+    padding-bottom: 21px;
     color: var(--aside-text);
     text-decoration: none;
     font-weight: 500;
@@ -556,16 +580,33 @@ body {
     color: #2196F3;
     fill: var(--accent-color);
   }
+}
+@media screen and (min-width: 1200px) {
+  .contact__item {
+    margin-right: 50px;
+    margin-bottom: 0;
+    padding-top: 0;
+  }
+
+  .contact__item2 {
+    padding-bottom: 0;
+  }
+
+  .contact__item:not(:last-child) {
+    margin-bottom: 0;
+    padding-top: 0;
+  }
+
+  .nav-contact__link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 
   .contact__list {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .navigation {
-    display: flex;
-    align-content: center;
+    flex-direction: row;
+    align-items: center;
+    margin-left: auto;
   }
 }
 @media screen and (max-width: 767px) {
@@ -577,14 +618,14 @@ body {
     padding-top: 118px;
     padding-bottom: 118px;
     background-color: #2f303a;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(.../images/header-img.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header-img.jpg);
     background-size: cover;
     background-repeat: no-repeat;
   }
 }
 @media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
   .section-main {
-    background-image: url(".../images/header-img@2x.jpg");
+    background-image: url("../images/header-img@2x.jpg");
   }
 }
 @media screen and (max-width: 767px) {
@@ -607,6 +648,75 @@ body {
     color: var(--accent-background-color);
     margin: 0 auto;
     margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .section-main {
+    min-width: 768px;
+    height: 400px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 118px;
+    padding-bottom: 118px;
+    background-color: #2f303a;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header-laptop-img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .section-main {
+    background-image: url("../images/header-laptop-img@2x.jpg");
+  }
+}
+@media screen and (min-width: 768px) {
+  .advantage-container {
+    text-align: center;
+    height: auto;
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .section-main__caption {
+    font-family: var(--accent-text);
+    width: 360px;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--accent-background-color);
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-main {
+    max-width: 1600px;
+    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+
+  .section-main__caption {
+    width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
+
+  .section-main {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Img.jpg);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .section-main {
+    background-image: url("../images/Img@2x.jpg");
+  }
+}
+@media screen and (min-width: 1200px) {
+  .advantage-container {
+    max-width: 1600px;
   }
 }
 .modal__btn-close {
