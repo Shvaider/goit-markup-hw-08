@@ -1,47 +1,129 @@
-.section-main-content {
-    padding-top: 94px;
-    padding-bottom: 94px;
+// 0px -1199px
+@media screen and (max-width: 1199px) {
+    .section-main-content {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .section-content__list {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        margin-right: -30px;
+        margin-bottom: -30px;
+    }
+    .section-content__item {
+        flex-basis: calc((100% - 30px)/2);
+        margin-right: 30px;
+        margin-bottom: 30px;
+    }
+    .section-content__item:nth-child(2n) {
+        margin-right: 0;
+    }
+    .section__hero-pic {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 120px;
+        background: var(--background-color-buttons);
+        border-radius: 4px;
+        margin-bottom: 30px;
+    }
+    .hero__pic {
+        width: 70px;
+        height: 70px;
+    }
+    .section-content__subtitle {
+        font-family: var(--accent-text);
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        color: var(--accent-text-color);
+    }
+    .section-content__text {
+        font-family: var(--accent-text);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color: var(--aside-text);
+    }
+}
+// 0px -767px
+@media screen and (max-width: 767px) {
+    .section-content__list {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+    .section-content__subtitle {
+        display: flex;
+        justify-content: center;
+    }
+    .section-content__item {
+        flex-basis: 0;
+        margin-right: 0;
+    }
+    .section-content__item:not(:last-child) {
+        margin-bottom: 30px;
+    }
 }
 
-.section__hero-pic {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 120px;
-    background: var(--background-color-buttons);
-    border-radius: 4px;
-    margin-bottom: 30px;
-}
+// 1200px +
+@media screen and (min-width: 1200px) {
+    .section-main-content {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 
-.hero__pic {
-    width: 70px;
-    height: 70px;
-}
-.section-content__list {
-    display: flex;
-    list-style: none;
-    flex-direction: row;
-}
-.section-content__item {
-    flex-basis: calc((100% - 90px) /4);
-    margin-right: 30px;
-}
-.section-content__item:nth-child(4n) {
-    margin-right: 0;
-}
-.section-content__subtitle {
-    font-family: var(--accent-text);
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-    color: var(--accent-text-color);
-}
-.section-content__text {
-    font-family: var(--accent-text);
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: var(--aside-text);
+    .section__hero-pic {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 120px;
+        background: var(--background-color-buttons);
+        border-radius: 4px;
+        margin-bottom: 30px;
+    }
+
+    .hero__pic {
+        width: 70px;
+        height: 70px;
+    }
+    .section-content__list {
+        display: flex;
+        list-style: none;
+        flex-direction: row;
+    }
+    .section-content__item {
+        flex-basis: calc((100% - 90px) /4);
+        margin-right: 30px;
+    }
+    .section-content__item:nth-child(4n) {
+        margin-right: 0;
+    }
+    .section-content__subtitle {
+        font-family: var(--accent-text);
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        color: var(--accent-text-color);
+    }
+    .section-content__text {
+        font-family: var(--accent-text);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color: var(--aside-text);
+    }
 }
