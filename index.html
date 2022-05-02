@@ -21,7 +21,7 @@
                 <ul class="site-nav__list">
                     <li class="item"><a href="./index.html" class="nav-list__link current">Студия</a></li>
                     <li class="item"><a href="./portfolio.html" class="nav-list__link">Портфолио</a></li>
-                    <li class="item"><a href="" class="nav-list__link item3">Контакты</a></li>
+                    <li class="item"><a href="" class="nav-list__link">Контакты</a></li>
                 </ul>
             </nav>
                 <ul class="contact__list">
@@ -209,17 +209,56 @@
                 <h2 class="main__title">Чем мы занимаемся</h2>
                 <ul class="main__img-list">
                     <li class="main__img-item">
-                        <div class="main__imege"><img srcset="./images/write_text.jpg 1x, ./images/write_text-img@2x.jpg 2x" src="./images/write_text-img.jpg" alt="write_text" width="370" />
+                        <div class="main__imege">
+                            <picture>
+                                <source
+                                srcset="./images/write_text-desktop-img.webp 1x, ./images/write_text-desktop-img@2x.jpg 2x"
+                                media="(min-width: 1200px)"
+                                type="image/webp"
+                                />
+
+                                <source 
+                                srcset="images/write_text-desktop-img.jpg 1x, images/write_text-desktop-img@2x.jpg 2x"
+                                media="(min-width: 1200px)"
+                                />
+                            <img src="./images/write_text-img.jpg" alt="write_text" width="370" />
+                            </picture>
                             <div class="main__conteiner-box main--text">Десктопные приложения</div>
                         </div>
                     </li>
                     <li class="main__img-item">
-                        <div class="main__imege"><img srcset="./images/mobile_on_computer.jpg 1x, ./images/mobile_on_computer-img@2x.jpg 2x" src="./images/mobile_on_computer.jpg" alt="mobile_on_computer" width="370" />
+                        <div class="main__imege">
+                            <picture>
+                                <source
+                                srcset="./images/mobile_on_computer-desktop-img.webp 1x, ./images/mobile_on_computer-desktop-img@2x.jpg 2x"
+                                media="(min-width: 1200px)"
+                                type="image/webp"
+                                />
+
+                                <source 
+                                srcset="images/mobile_on_computer-desktop-img.jpg 1x, images/mobile_on_computer-desktop-img@2x.jpg 2x"
+                                media="(min-width: 1200px)"
+                                />
+                            <img src="./images/mobile_on_computer.jpg" alt="mobile_on_computer" width="370" />
+                            </picture>
                             <div class="main__conteiner-box main--text">Мобильные приложения</div>
                         </div>
                         </li>
                     <li class="main__img-item">
-                        <div class="main__imege"><img srcset="./images/laptop-img.jpg 1x, ./images/laptop-img@2x.jpg 2x" src="./images/laptop-img.jpg" alt="laptop" width="370" />
+                        <div class="main__imege">
+                            <picture>
+                                <source
+                                srcset="./images/laptop-desktop-img.webp 1x, ./images/laptop-desktop-img@2x.jpg 2x"
+                                media="(min-width: 1200px)"
+                                type="image/webp"
+                                />
+
+                                <source 
+                                srcset="images/laptop-desktop-img.jpg 1x, images/laptop-desktop-img@2x.jpg 2x"
+                                media="(min-width: 1200px)"
+                                />
+                            <img src="./images/laptop-img.jpg" alt="laptop" width="370" />
+                            </picture>
                             <div class="main__conteiner-box main--text">Дизайнерские решения</div>
                         </div>
                     </li>
@@ -231,7 +270,39 @@
             <div class="container">
                <h2 class="description">Наша команда</h2>
                 <ul class="userpic__list">
-                    <li class="userpic__item"><img srcset="./images/igor-img.jpg 1x, ./images/igor-img@2x.jpg 2x" src="./images/igor-img.jpg" alt="igor" />
+                    <li class="userpic__item">
+                        <picture>
+                            <source
+                                srcset="./images/igor-desktop-img.webp 1x, ./images/igor-desktop-img@2x.jpg 2x, ./images/igor-desktop-img@3x.webp 3x"
+                                media="(min-width: 1200px)"
+                                type="image/webp"
+                            />
+                            <source 
+                                srcset="images/igor-desktop-img.jpg 1x, images/igor-desktop-img@2x.jpg 2x, ./images/igor-desktop-img@3x.jpg 3x"
+                                media="(min-width: 1200px)"
+                            />
+
+                            <source
+                                srcset="./images/igor-laptop-img.webp 1x, ./images/igor-laptop-img@2x.jpg 2x"
+                                media="(min-width: 768px)"
+                                type="image/webp"
+                            />
+                            <source 
+                                srcset="images/igor-laptop-img.jpg 1x, images/igor-laptop-img@2x.jpg 2x"
+                                media="(min-width: 768px)"
+                            />
+
+                            <source
+                                srcset="./images/igor-mobile-img.webp 1x, ./images/igor-mobile-img@2x.jpg 2x"
+                                media="(max-width: 768px)"
+                                type="image/webp"
+                            />
+                            <source 
+                                srcset="images/igor-mobile-img.jpg 1x, images/igor-mobile-img@2x.jpg 2x"
+                                media="(max-width: 768px)"
+                            />
+                        <img src="./images/igor-img.jpg" alt="igor" />
+                        </picture>
                         <div class="userpic__profile">
                             <h3 class="userpic__name">Игорь Демьяненко</h3>
                             <p class="userpic__description">Product Designer</p>
@@ -268,7 +339,39 @@
                         </div>
                     </li>
 
-                    <li class="userpic__item"><img srcset="./images/olga-img.jpg 1x, ./images/olga-img@2x.jpg 2x" src="./images/olga-img.jpg" alt="olga" />
+                    <li class="userpic__item">
+                        <picture>
+                            <source
+                                srcset="./images/olga-desktop-img.webp 1x, ./images/olga-desktop-img@2x.jpg 2x, ./images/olga-desktop-img@3x.webp 3x"
+                                media="(min-width: 1200px)"
+                                type="image/webp"
+                            />
+                            <source 
+                                srcset="images/olga-desktop-img.jpg 1x, images/olga-desktop-img@2x.jpg 2x, ./images/olga-desktop-img@3x.jpg 3x"
+                                media="(min-width: 1200px)"
+                            />
+
+                            <source
+                                srcset="./images/olga-laptop-img.webp 1x, ./images/olga-laptop-img@2x.jpg 2x"
+                                media="(min-width: 768px)"
+                                type="image/webp"
+                            />
+                            <source 
+                                srcset="images/olga-laptop-img.jpg 1x, images/olga-laptop-img@2x.jpg 2x"
+                                media="(min-width: 768px)"
+                            />
+
+                            <source
+                                srcset="./images/olga-mobile-img.webp 1x, ./images/olga-mobile-img@2x.jpg 2x"
+                                media="(max-width: 768px)"
+                                type="image/webp"
+                            />
+                            <source 
+                                srcset="images/olga-mobile-img.jpg 1x, images/olga-mobile-img@2x.jpg 2x"
+                                media="(max-width: 768px)"
+                            />
+                        <img src="./images/olga-img.jpg" alt="olga" />
+                        </picture>
                         <div class="userpic__profile">
                             <h3 class="userpic__name">Ольга Репина</h3>
                             <p class="userpic__description">Frontend Developer</p>
@@ -305,7 +408,39 @@
                         </div>
                     </li>
 
-                    <li class="userpic__item"><img srcset="./images/nikolai-img.jpg 1x, ./images/nikolai-img@2x.jpg 2x" src="./images/nikolai.jpg" alt="nikolai" />
+                    <li class="userpic__item">
+                        <picture>
+                            <source
+                                srcset="./images/nikolai-desktop-img.webp 1x, ./images/nikolai-desktop-img@2x.jpg 2x, ./images/nikolai-desktop-img@3x.webp 3x"
+                                media="(min-width: 1200px)"
+                                type="image/webp"
+                            />
+                            <source 
+                                srcset="images/nikolai-desktop-img.jpg 1x, images/nikolai-desktop-img@2x.jpg 2x, ./images/nikolai-desktop-img@3x.jpg 3x"
+                                media="(min-width: 1200px)"
+                            />
+
+                            <source
+                                srcset="./images/nikolai-laptop-img.webp 1x, ./images/nikolai-laptop-img@2x.jpg 2x"
+                                media="(min-width: 768px)"
+                                type="image/webp"
+                            />
+                            <source 
+                                srcset="images/nikolai-laptop-img.jpg 1x, images/nikolai-laptop-img@2x.jpg 2x"
+                                media="(min-width: 768px)"
+                            />
+
+                            <source
+                                srcset="./images/nikolai-mobile-img.webp 1x, ./images/nikolai-mobile-img@2x.jpg 2x"
+                                media="(max-width: 768px)"
+                                type="image/webp"
+                            />
+                            <source 
+                                srcset="images/nikolai-mobile-img.jpg 1x, images/nikolai-mobile-img@2x.jpg 2x"
+                                media="(max-width: 768px)"
+                            />
+                        <img src="./images/nikolai.jpg" alt="nikolai" />
+                        </picture>
                         <div class="userpic__profile">
                             <h3 class="userpic__name">Николай Тарасов</h3>
                             <p class="userpic__description">Marketing</p>
@@ -342,7 +477,39 @@
                         </div>
                     </li>
 
-                    <li class="userpic__item"><img srcset="./images/michail-img.jpg 1x, ./images/michail-img@2x.jpg 2x" src="./images/mihail.jpg" alt="mihail" />
+                    <li class="userpic__item">
+                        <picture>
+                            <source
+                                srcset="./images/mihail-desktop-img.webp 1x, ./images/mihail-desktop-img@2x.jpg 2x, ./images/mihail-desktop-img@3x.webp 3x"
+                                media="(min-width: 1200px)"
+                                type="image/webp"
+                            />
+                            <source 
+                                srcset="images/mihail-desktop-img.jpg 1x, images/mihail-desktop-img@2x.jpg 2x, ./images/mihail-desktop-img@3x.jpg 3x"
+                                media="(min-width: 1200px)"
+                            />
+
+                            <source
+                                srcset="./images/mihail-laptop-img.webp 1x, ./images/mihail-laptop-img@2x.jpg 2x"
+                                media="(min-width: 768px)"
+                                type="image/webp"
+                            />
+                            <source 
+                                srcset="images/mihail-laptop-img.jpg 1x, images/mihail-laptop-img@2x.jpg 2x"
+                                media="(min-width: 768px)"
+                            />
+
+                            <source
+                                srcset="./images/mihail-mobile-img.webp 1x, ./images/mihail-mobile-img@2x.jpg 2x"
+                                media="(max-width: 768px)"
+                                type="image/webp"
+                            />
+                            <source 
+                                srcset="images/mihail-mobile-img.jpg 1x, images/mihail-mobile-img@2x.jpg 2x"
+                                media="(max-width: 768px)"
+                            />
+                        <img src="./images/mihail.jpg" alt="mihail" />
+                        </picture>
                         <div class="userpic__profile">
                             <h3 class="userpic__name">Михаил Ермаков</h3>
                             <p class="userpic__description">UI Designer</p>

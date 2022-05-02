@@ -100,6 +100,9 @@
     .img__item:not(:last-child) {
         margin-bottom: 30px;
     }
+    .overlay::before {
+        width: 450px;
+    }
 }
 // 1200px +
 @media screen and (min-width: 1200px) {
@@ -126,6 +129,9 @@
         background: var(--accent-background-color);
         margin-right: 30px;
         margin-bottom: 30px;
+    }
+    .img {
+        width: 370px;
     }
     .overlay::before {
         position: absolute;
