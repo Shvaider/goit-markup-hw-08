@@ -78,9 +78,6 @@
         text-transform: uppercase;
         color: var(--accent-background-color);
     }
-    .footer-title-text {
-        margin-bottom: 20px;
-    }
     .footer-conteiner-btn-input {
         display: flex;
         flex-direction: column;
@@ -88,16 +85,14 @@
     }
     .footer-section-email {
         display: flex;
-        margin-bottom: 20px;
     }
     .fotter-input {
         display: flex;
         align-items: center;
         padding-left: 16px;
         width: 450px;
-        margin-left: auto;
-        margin-right: auto;
         height: 50px;
+        margin: 20px auto;
         font-family: var(--accent-text);
         font-style: normal;
         font-weight: 400;
