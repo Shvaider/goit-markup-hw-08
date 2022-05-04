@@ -58,14 +58,22 @@
 }
 // 0px - 767px
 @media screen and (max-width: 767px) {
+    
     .svg__item {
         flex-basis: calc((100% - 60px)/2);
     }
     .svg__link {
-        width: 197px;
+        width: 210px;
     }
     .svg__list {
         justify-content: center;
+    }
+}
+// 448px - 767px
+@media screen and (min-width: 448px) and (max-width: 767px) {
+    .svg__list {
+        
+        justify-content: space-between;
     }
 }
 // 1200px +
