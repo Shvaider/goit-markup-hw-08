@@ -55,17 +55,21 @@
     .mobile-menu__close-icon:focus{
         fill: #2196F3;
     }
-    .mobile-nav__list {
+    .section-mobile-nav__box {
         display: flex;
-        flex-direction: column;
-        align-items: flex-start;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: baseline;
+        height: 100vh;
+        align-content: space-between;
+    }
+    .mobile-nav__list {
         list-style: none;
         font-family: var(--accent-text);
         font-style: normal;
         font-size: 40px;
         line-height: 1.18;
         letter-spacing: 0.02em;
-        margin-bottom: 302px;
     }
     .mobile-nav__item:not(:last-child) {
         margin-bottom: 32px;
@@ -85,12 +89,10 @@
     }
     .mobile-contact__list {
         list-style: none;
+        margin-bottom: 64px;
     }
     .mobile-contact__item:not(:last-child) {
         margin-bottom: 32px;
-    }
-    .section-mobile-contact__box {
-        margin-bottom: 64px;
     }
     .mobile-contact__link {
         text-decoration: none;
