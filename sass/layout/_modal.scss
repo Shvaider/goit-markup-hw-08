@@ -1,5 +1,4 @@
-// 0px - 1199px
-@media screen and (max-width: 1199px) {
+
     .modal__btn-close {
         display: flex;
         align-items: center;
@@ -63,8 +62,7 @@
     .modal {
         display: flex;
         flex-direction: column;
-        width: 450px;
-        height: 609px;
+        width: 100%;
         padding: 40px;
         background: var(--accent-background-color);
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -102,7 +100,7 @@
         }
     }
     .aside-desc {
-        width: 370px;
+        width: 100%;
         height: 120px;
         border: 1px solid rgba(33, 33, 33, 0.2);
         box-sizing: border-box;
@@ -149,7 +147,7 @@
     .modal__input {
         cursor: pointer;
         box-sizing: border-box;
-        width: 370px;
+        width: 100%;
         height: 40px;
         padding: 1rem .75rem;
         border: 1px solid rgba(33, 33, 33, 0.2);
@@ -213,7 +211,18 @@
     .connection-field {
         position: relative;
     }
-}
+// 320px +
+@media screen and (min-width: 480px) {
+        .modal {
+            width: 450px;
+        }
+        .modal__input {
+            width: 370px;
+        }
+        .aside-desc {
+            width: 370px;
+        }
+    }
 // 1200px +
 @media screen and (min-width: 1200px) {
     .modal__btn-close {

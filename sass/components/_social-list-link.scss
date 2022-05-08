@@ -2,7 +2,8 @@
 @media screen and (max-width: 1199px) {
     .social__list {
         display: flex;
-        justify-content: space-around;
+        align-items: center;
+        justify-content: center;
         list-style: none;
     
     }
@@ -29,12 +30,7 @@
         margin-left: 10px;
     }
 }
-// 0px -767px
-@media screen and (min-width: 480px) {
-    .social__list {
-    justify-content: space-around;
-    }
-}
+
 // 1200px +
 @media screen and (min-width: 1200px) {
     .social__list {
