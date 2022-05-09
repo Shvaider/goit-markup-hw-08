@@ -88,12 +88,6 @@ body {
   color: var(--accent-color);
 }
 
-.mobile-menu__conteiner {
-  position: relative;
-  padding-top: 48px;
-  padding-bottom: 48px;
-}
-
 .mobile-menu__btn {
   cursor: pointer;
   background-color: transparent;
@@ -158,6 +152,10 @@ body {
   justify-content: space-between;
   flex-direction: column;
   height: 100vh;
+  position: relative;
+  padding-top: 48px;
+  padding-left: 25px;
+  padding-bottom: 48px;
 }
 
 .mobile-nav__list {
