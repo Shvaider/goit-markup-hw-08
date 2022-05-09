@@ -1829,14 +1829,6 @@ body {
   fill: currentColor;
 }
 
-.footer-section-flex {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  align-content: center;
-}
-
 .footer-container-section {
   display: flex;
   flex-direction: column;
@@ -1858,6 +1850,10 @@ body {
   margin-top: 60px;
 }
 
+.footer-conteiner-button {
+  display: block;
+}
+
 .footer-title-text {
   font-family: var(--accent-text);
   font-style: normal;
@@ -1871,26 +1867,10 @@ body {
   margin-bottom: 20px;
 }
 
-.footer-conteiner-btn-input {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.footer-section-email {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
 .fotter-input {
-  display: flex;
-  justify-content: center;
   padding-left: 16px;
   height: 50px;
-  width: 100%;
-  margin-right: auto;
-  margin-left: auto;
+  width: 450px;
   font-family: var(--accent-text);
   font-style: normal;
   font-weight: 400;
@@ -1954,9 +1934,9 @@ body {
   fill: currentColor;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
   .fotter-input {
-    width: 450px;
+    width: 100%;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1966,6 +1946,7 @@ body {
   }
 
   .footer-section-flex {
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
@@ -2009,6 +1990,7 @@ body {
   }
 
   .footer-conteiner-btn-input {
+    display: flex;
     flex-direction: row;
   }
 
